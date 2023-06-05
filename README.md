@@ -2,6 +2,8 @@ We appreciate all reviewers for their valuable comments and will consider all su
 
 
 
+---
+
 **Reviewer 1 & 2**
 
 
@@ -11,6 +13,8 @@ Q1: Using Python/PyTorch for model unification
 A1: Both DGL and PyG have operator implementations and interface definitions independent of PyTorch. Despite works such as ONNX for model conversion across deep learning frameworks, there is still no support for GNN frameworks because each GNN framework maintains its internal data structure for graph-related data. To address the above challenge, we propose GUL for unified model definition and a code transformer for code generation. In contrast, Python-based transformations require defining functional interfaces for each operator, preventing its easy adoption for emerging GNNs.
 
 
+
+---
 
 **Reviewer 1**
 
@@ -29,6 +33,8 @@ Q3: Handling multi-GPU scenarios
 A3: The GNNPerf toolkit can seamlessly support multi-GPU scenarios without communication. It launches multiple processes, each responsible for profiling a specific GPU to collect detailed statistics. In scenarios requiring communication, GNNPerf can integrate additional profilers for collecting communication-related metrics. The collected statistics can be then visualized in the GUI, providing users with a comprehensive and intuitive representation.
 
 
+
+---
 
 **Reviewer 2**
 
@@ -75,6 +81,8 @@ Q10: Open source
 A10: We will open source GNNPerf to promote the research of the community upon acceptance.
 
 
+
+---
 
 **Reviewer 3**
 
